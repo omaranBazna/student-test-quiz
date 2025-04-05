@@ -84,9 +84,22 @@ const App = () => {
       <h1 className="title">اختبار الرياضيات</h1>
       {showResult ? (
         <div className="result-container">
-          <h2>انتهى الاختبار!</h2>
-          <p>درجتك: {score} من {questions.length}</p>
-        </div>
+        <h2>انتهى الاختبار!</h2>
+        <p>درجتك: {score} من {questions.length}</p>
+      
+        <p>نحن نبحث عن طلاب من أجل إعطاء وجهات النظر في تطوير الموقع</p>
+        <p>هل ترغب في المشاركة؟</p>
+      
+        {/* زر WhatsApp */}
+        <a
+          href="https://wa.me/3136775744?text=مرحباً، أرغب في المشاركة في تطوير الموقع."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-button"
+        >
+          <button>تواصل عبر واتساب</button>
+        </a>
+      </div>
       ) : (
         <div className="question-container">
           <h2>{questions[currentQuestion].question}</h2>

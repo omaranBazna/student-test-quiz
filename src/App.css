@@ -68,3 +68,41 @@ body {
 button:focus {
   outline: none;
 }
+
+
+/* WhatsApp Button Styling */
+.whatsapp-button button {
+  background-color: #25d366; /* WhatsApp green color */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px; /* Max width for the button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button button:hover {
+  background-color: #128c7e; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.whatsapp-button button:active {
+  transform: translateY(0); /* Button back to normal when clicked */
+}
+
+/* Adding WhatsApp Icon */
+.whatsapp-button button::before {
+  content: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg'); /* WhatsApp icon */
+  margin-right: 10px; /* Space between icon and text */
+  width: 20px;
+  height: 20px;
+}
