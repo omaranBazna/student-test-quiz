@@ -92,7 +92,7 @@ const App = () => {
       
         {/* زر WhatsApp */}
         <a
-          href="https://wa.me/3136775744?text=مرحباً، أرغب في المشاركة في تطوير الموقع."
+          href="https://wa.me/+13136775744?text=مرحباً، أرغب في المشاركة في تطوير الموقع."
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-button"
