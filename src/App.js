@@ -63,7 +63,7 @@ const App = () => {
 
   // Initialize Google Analytics
   useEffect(() => {
-    ReactGA.initialize("YOUR-GA4-ID");  // Replace with your GA4 ID
+    ReactGA.initialize("G-CLK9EY7GJP");  // Replace with your GA4 ID
     ReactGA.send("pageview");
   }, []);
 
