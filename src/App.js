@@ -52,7 +52,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1 className="title">اختبار الرياضيات</h1>
+      <h1>اختبار اللغة الإنجليزية</h1>
       {showResult ? (
         <div className="result-container">
         <h2>انتهى الاختبار!</h2>
