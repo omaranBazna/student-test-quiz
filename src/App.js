@@ -4,56 +4,27 @@ import './App.css';
 
 const questions = [
   {
-    question: "ما ناتج ٣ + ٥؟",
-    options: ["٦", "٨", "٧", "٩"],
-    answer: "٨"
+    question: "ما التصريف الثاني للفعل 'go'؟",
+    options: ["goes", "going", "went", "gone"],
+    answer: "went"
   },
   {
-    question: "ما ناتج ١٢ ÷ ٤؟",
-    options: ["٢", "٣", "٤", "٥"],
-    answer: "٣"
+    question: "ما التصريف الثالث للفعل 'eat'؟",
+    options: ["ate", "eaten", "eats", "eating"],
+    answer: "eaten"
   },
   {
-    question: "ما ناتج ٩ × ١؟",
-    options: ["١٠", "٩", "٨", "١"],
-    answer: "٩"
+    question: "ما التصريف الثاني للفعل 'see'؟",
+    options: ["saw", "seen", "seeing", "sees"],
+    answer: "saw"
   },
   {
-    question: "ما ناتج ٧ - ٣؟",
-    options: ["٤", "٣", "٥", "٢"],
-    answer: "٤"
-  },
-  {
-    question: "ما ناتج ٦ + ٢؟",
-    options: ["٧", "٨", "٩", "٦"],
-    answer: "٨"
-  },
-  {
-    question: "ما ناتج ٥ × ٢؟",
-    options: ["١٠", "٩", "٨", "٧"],
-    answer: "١٠"
-  },
-  {
-    question: "ما ناتج ١٠ ÷ ٢؟",
-    options: ["٤", "٥", "٦", "٣"],
-    answer: "٥"
-  },
-  {
-    question: "ما ناتج ٣ + ٧؟",
-    options: ["٩", "١٠", "٨", "١١"],
-    answer: "١٠"
-  },
-  {
-    question: "ما ناتج ٤ × ٣؟",
-    options: ["١٢", "١٤", "١٠", "١١"],
-    answer: "١٢"
-  },
-  {
-    question: "ما ناتج ١٥ - ٥؟",
-    options: ["١١", "١٠", "٩", "٨"],
-    answer: "١٠"
+    question: "ما التصريف الثالث للفعل 'write'؟",
+    options: ["written", "wrote", "writes", "writing"],
+    answer: "written"
   }
 ];
+
 
 
 const App = () => {
