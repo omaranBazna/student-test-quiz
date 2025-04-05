@@ -84,7 +84,9 @@ body {
 button:focus {
   outline: none;
 }
-
+a{
+  text-decoration: none;
+}
 /* WhatsApp Button Styling */
 .whatsapp-button button {
   background-color: #25D366; /* WhatsApp green color */
