@@ -1,9 +1,11 @@
 /* App.css */
+
+/* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(135deg, #FF6F61, #FF8E53); /* Updated gradient */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -12,86 +14,99 @@ body {
 
 .app-container {
   background-color: white;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px; /* Suitable max width for mobile devices */
+  transition: all 0.3s ease;
 }
 
+/* Title */
 .title {
   font-size: 2.5rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
+/* Question Container */
 .question-container h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
 }
 
+/* Options Container */
 .options-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .option-btn {
-  background-color: #4caf50;
+  background-color: #4CAF50; /* Green background */
   color: white;
-  padding: 12px 24px;
-  font-size: 1.2rem;
-  margin: 10px 0;
+  padding: 15px 30px;
+  font-size: 1.1rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.3s ease;
-  width: 60%;
+  width: 100%;
+  max-width: 300px; /* Max width for buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .option-btn:hover {
+  background-color: #45A049; /* Darker green on hover */
   transform: scale(1.05);
-  background-color: #45a049;
 }
 
+/* Result Container */
 .result-container h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #333;
+  font-weight: 700;
 }
 
 .result-container p {
-  font-size: 1.5rem;
-  color: #4caf50;
+  font-size: 1.2rem;
+  color: #4CAF50;
+  margin: 10px 0;
 }
 
+/* Button Focus */
 button:focus {
   outline: none;
 }
 
-
 /* WhatsApp Button Styling */
 .whatsapp-button button {
-  background-color: #25d366; /* WhatsApp green color */
+  background-color: #25D366; /* WhatsApp green color */
   color: white;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  font-weight: bold;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
   border: none;
-  border-radius: 50px; /* Rounded corners */
+  border-radius: 30px; /* More rounded */
   cursor: pointer;
   margin-top: 20px;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 250px; /* Max width for the button */
+  max-width: 280px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .whatsapp-button button:hover {
-  background-color: #128c7e; /* Darker green on hover */
+  background-color: #128C7E; /* Darker green on hover */
   transform: translateY(-2px); /* Slight lift effect */
 }
 
@@ -105,4 +120,26 @@ button:focus {
   margin-right: 10px; /* Space between icon and text */
   width: 20px;
   height: 20px;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 15px;
+    max-width: 90%; /* Full width for mobile */
+  }
+
+  .title {
+    font-size: 2rem; /* Adjusted title size */
+  }
+
+  .option-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .whatsapp-button button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
 }
